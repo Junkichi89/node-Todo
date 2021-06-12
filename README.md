@@ -10,4 +10,22 @@ node index.js
 hello Tanaka
 hello Suzuki
 ```
+##greet.jsを作成
+
+module.exportsで関数をエクスポートする。
+`module.exports = greet;`
+
+useGreet.jsを作成し、require関数を使用して、greet.jsのgreet
+関数を使えるようにする。
+```
+const greet = require('./greet');
+```
+こんな感じの記述を追加し、実行できるか確認
+
+```
+% node useGreet.js
+hello Yamada
+```
+
+ちゃんと表示できた！
 
