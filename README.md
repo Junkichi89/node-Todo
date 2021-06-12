@@ -7,8 +7,9 @@ Homebrew 3.1.12
 Homebrew/homebrew-core (git revision 7896b0bfc1; last commit 2021-06-12)
 Homebrew/homebrew-cask (git revision 27b2ab9aa7; last commit 2021-06-12)
 ```
-
-``` Mysql
+**MySqlのインストールエラー時参考**
+[【MySQL】Homebrewを使用してMacへMySQLをインストールする](https://pointsandlines.jp/env-tool/mac/mysql-install-mac)
+```
 % mysql --version
 mysql  Ver 8.0.25 for macos11.3 on x86_64 (Homebrew)
 ```
