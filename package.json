@@ -1,0 +1,22 @@
+{
+  "name": "express-todo",
+  "version": "1.0.0",
+  "description": "[参考記事](https://zenn.dev/wkb/books/node-tutorial/viewer/2)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junkichi89/node-Todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Junkichi89/node-Todo/issues"
+  },
+  "homepage": "https://github.com/Junkichi89/node-Todo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
