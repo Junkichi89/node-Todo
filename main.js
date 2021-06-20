@@ -1,38 +1,16 @@
-const addTask = document.querySelector('.add');
-const list = document.querySelector('.tasks');
+const http = require('http');
+const port = 3000;
 
 
-let todos = [];
-
-function addTodo(text) {
-  const todo = {
-    id: Date.now(),
-    text,
-  };
-  todos.push(todo);
-}
-
-function renderTodo() {
-  let temp = '';
-  todos.forEach(todo => {
-    const html = `
-    <li key="${todo.id}">
-      <span>${todo.text}</span>    
-    </li>
-    `;
-    temp += html;
+const server = http.createServer((request, response) => {
+  response.writeHead(200, {
+    "Content-type": "text/html"
   });
-
-  list.innerHTML = temp;
-}
-
-addTask.addEventListener('submit', e => {
-  e.preventDefault();
-
-  const text = addTask.add.value.trim();
-  if (text !== '') {
-    addTodo(text);
-    addTask.reset();
-    renderTodo();
-  }
+  
+  const responseMessage = "<h1>Hello World</h1>";
+  response.end(responseMessage);
+  console.log(`Sent a response : ${responseMessage}`);
 });
+
+server.listen(port);
+console.log(`The server has started and is listening on port number: ${port}`);
