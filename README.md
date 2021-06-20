@@ -1,8 +1,6 @@
 # Nodeを使ってTODOアプリを作成
-[参考記事](https://zenn.dev/wkb/books/node-tutorial/viewer/2)
+[参考記事](https://zenn.dev/wkb/books/node-tutorial/viewer/todo_04)
 
-#### Chapter 11
-
-## ToDoアプリをExpressで作成しよう
+#### Chapter 12
 
 
